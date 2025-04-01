@@ -6,7 +6,7 @@ import plotly.express as px
 if __name__ == '__main__':
     # Load the data
     try:
-        data = pd.read_csv(r"C:\Users\Keerthana Prasad\Downloads\bangalore dataset\Banglore_traffic_Dataset.csv")
+        data = pd.read_csv("Banglore_traffic_Dataset.csv")
         data['Date'] = pd.to_datetime(data['Date'])
     except Exception as e:
         st.error(f"Error loading data: {e}")
